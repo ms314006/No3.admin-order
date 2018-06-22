@@ -1,0 +1,154 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div id="header" class="header">
+        <span id="logoText">Shoptime</span>
+        <input type="button" id="tabHOME" class="tab HOME default" value="HOME" />
+        <input type="button" id="tabORDERS" class="tab ORDERS" value="ORDERS" />
+        <input type="button" id="tabPRODUCTS" class="tab PRODUCTS" value="PRODUCTS" />
+        <span id="userText">ADMIN</sapn>
+    </div>
+
+    <div id="totalDiv">
+        <div id="totalLeft">OVERVIEW</div>
+        <div id="totalRight">
+            <input type="date" class="totalRightDOM dateDOM" />
+            <div id="T2"></div>
+            <input type="date" class="totalRightDOM dateDOM" />
+            <select class="totalRightDOM">
+                <option>Daily</option>
+                <option>Weekly</option>
+                <option>Monthly</option>
+                <option>Yearly</option>
+                <option>Custom</option>
+            </select>
+        </div>
+        <div class="total revenue">
+            <i class="fas fa-hand-holding-usd"> TOTAL REVENUE</i>
+            <br>
+            <span class="totalNum revenue">54,540</span>
+        </div>
+        <div class="total cost">
+            <i class="fas fa-boxes"> TOTAL COST</i>
+            <br>
+            <span class="totalNum cost">12,660</span>
+        </div>
+        <div class="total income">
+            <i class="fas fa-money-bill"> NET INCOME</i>
+            <br>
+            <span class="totalNum income">41,880</span>
+        </div>
+    </div>
+
+    <div id="chartDiv">
+        <div id="container" style="height: 100%"></div>
+    </div>
+
+    <div id="footerDiv">
+        <div id="website" class="footerFrame">
+            <span class="footerTitle">Transaction website</span>
+            <div class="websiteList">
+                <i class="fab fa-facebook-square"></i>
+                <span class="percent green">20%</span>
+                <i class="fas fa-arrow-up green icon"></i>
+                <span class="cost">45,836</span>
+                <span class="webName">Facebook.com</span>
+            </div>
+            <div class="websiteList">
+                <i class="fab fa-google"></i>
+                <span class="percent green">12%</span>
+                <i class="fas fa-arrow-up green icon"></i>
+                <span class="cost">23,582</span>
+                <span class="webName">Google.com</span>
+            </div>
+            <div class="websiteList">
+                <i class="fab fa-stripe-s"></i>
+                <span class="percent red">15%</span>
+                <i class="fas fa-arrow-down red icon"></i>
+                <span class="cost">2,489</span>
+                <span class="webName">Shopify.com</span>
+            </div>
+            <div class="websiteList">
+                <i class="fab fa-wordpress"></i>
+                <span class="percent red">30%</span>
+                <i class="fas fa-arrow-down red icon"></i>
+                <span class="cost">1,057</span>
+                <span class="webName">Wordpress.com</span>
+            </div>
+        </div>
+        <div id="orders" class="footerFrame">
+            <span class="footerTitle">Latest Orders</span>
+            <div class="ordersList">
+                <div id="previewDiv">
+                    <img class="previewPicture" src="https://cfshopeetw-a.akamaihd.net/file/66d823ff4c4518464d02e8b84359facf"></img>
+                </div>
+                <div class="ordersDetail">
+                    <span class="orderName">Vintage T-shirt</span>
+                    <br>
+                    <i class="fas fa-clock fa-xs orderData"></i>
+                    <span class="orderData">2018/6/13 13:42</span>
+                    <span class="orderTotal">Total</span>
+                    <br> 
+                    <i class="fas fa-male fa-lg orderData"></i>
+                    <span class="orderData">Belle Willis</span>
+                    <span class="orderTotal orderCost">3,200</span>
+                </div>
+            </div>
+            <div class="ordersList">
+                <div id="previewDiv">
+                    <img class="previewPicture" src="https://cfshopeetw-a.akamaihd.net/file/62ec8f9fa89f60c06863756d026ff4de"></img>
+                </div>
+                <div class="ordersDetail">
+                    <span class="orderName">Cowboy Jacket</span>
+                    <br>
+                    <i class="fas fa-clock fa-xs orderData"></i>
+                    <span class="orderData">2018/6/13 10:45</span>
+                    <span class="orderTotal">Total</span>
+                    <br> 
+                    <i class="fas fa-male fa-lg orderData"></i>
+                    <span class="orderData">Adrian Cummings</span>
+                    <span class="orderTotal orderCost">2,800</span>
+                </div>
+            </div>
+            <div class="ordersList">
+                <div id="previewDiv">
+                    <img class="previewPicture" src="https://cfshopeetw-a.akamaihd.net/file/56cb41f1aa7fd0ced74cb4cefea2d5dc"></img>
+                </div>
+                <div class="ordersDetail">
+                    <span class="orderName">Coach Coat</span>
+                    <br>
+                    <i class="fas fa-clock fa-xs orderData"></i>
+                    <span class="orderData">2018/6/13 8:26</span>
+                    <span class="orderTotal">Total</span>
+                    <br> 
+                    <i class="fas fa-male fa-lg orderData"></i>
+                    <span class="orderData">Lura Holland</span>
+                    <span class="orderTotal orderCost">1,600</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+    <script src="js/function.js"></script>
+</body>
+
+</html>

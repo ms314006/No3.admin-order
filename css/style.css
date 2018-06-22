@@ -1,0 +1,247 @@
+/*body*/
+body{ 
+    background-color: #F2F2F2;
+    margin: 0px; 
+    padding: 0px; 
+}
+
+/*header*/
+.header{
+    background-color: #000000;
+    height: 70px;
+}
+
+/*tab*/
+.header>.tab{
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 0px 10px; 
+    width: 100px;
+    height: 68px;
+    border: none;
+}
+
+/*tabDefault*/
+.header>.default{
+    color: #9B9B9B;
+    border-bottom:3px #FFFFFF solid;
+}
+
+.header>#logoText{
+    font-size: 24px;
+    color: #FFFFFF;
+    margin:0px 42px;
+}
+
+.header>#userText{
+    font-size: 16px;
+    color: #FFFFFF;
+    display: inline-block;
+    width: 55%;
+    text-align: right;
+}
+
+#totalDiv{
+    width: 95%;
+    height: 200px;
+    margin: 30px auto;
+}
+
+#totalLeft{
+    float: left;
+    font-size: 24px;
+    font-weight: bolder;
+    width:50%;
+}
+
+#totalRight{
+    float: left;
+    font-size: 24px;
+    width:50%;
+    text-align: right;
+}
+
+#totalRight>.totalRightDOM{
+    border:0px;
+    background-color: #F2F2F2;
+    color: #9B9B9B;
+    font-size: 16px;
+}
+
+#totalRight>.dateDOM{
+    width: 160px;
+}
+
+#T2 {
+    border-top: 6px solid #F2F2F2;
+    border-bottom: 6px solid #F2F2F2;
+    border-left: 10px solid #000000;
+    display:inline-block;
+}
+
+#totalDiv>.total{
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    padding-top:30px;
+    text-align: center;
+    font-size: 24px;
+    width: 32%;
+    height: 140px;
+    float: left;
+}
+
+#totalDiv>.cost{
+    margin-left:22px;
+    margin-right:22px;
+}
+
+#totalDiv>.total>.totalNum{
+    display: inline-block;
+    margin-top:30px;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+#totalDiv>.total>.revenue{
+    color: #7ED321;
+}
+#totalDiv>.total>.cost{
+    color: #D0021B;
+}
+#totalDiv>.total>.income{
+    color: #4A90E2;
+}
+
+#chartDiv{
+    width: 95%;
+    height: 406px;
+    margin: 50px auto 30px auto;
+    background-color: #FFFFFF;
+}
+
+#footerDiv{
+    margin: 0px auto;
+    width: 95%;
+}
+
+#footerDiv>.footerFrame{
+    height: 465px;
+    width: 49%;
+    margin-bottom: 40px;
+    background-color: #FFFFFF;
+}
+
+#footerDiv>#website{
+    float: left;
+}
+#footerDiv>#orders{
+    float: right;
+}
+
+.footerTitle{
+    font-size: 24px;
+    font-weight: bolder;
+    display: inline-block;
+    margin-top:30px;
+    margin-left:40px;
+}
+
+#footerDiv>#website>.websiteList{
+    margin:auto;
+    padding-top:25px;
+    height:75px;
+    width:87%;
+    border-bottom:1px #EBEBEB solid;
+    font-size: 54px;
+}
+
+#footerDiv>#orders>.ordersList{
+    margin:auto;
+    height:108px;
+    width:87%;
+    border-bottom:1px #EBEBEB solid;
+}
+
+#footerDiv>#website>.websiteList>.webName{
+    margin-top:10px;
+    width: 25%;
+    color: #9B9B9B;
+    font-size: 20px;
+    float:right;
+}
+
+#footerDiv>#website>.websiteList>.cost{
+    margin-top:10px;
+    margin-left: 130px;
+    width: 15%;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: right;
+    float:right;
+}
+
+#footerDiv>#website>.websiteList>.green{
+    margin-top:10px;
+    width: 8%;
+    color:#7ED321;
+    font-size: 24px;
+    float:right;
+}
+
+#footerDiv>#website>.websiteList>.red{
+    margin-top:10px;
+    width: 8%;
+    color:#D0021B;
+    font-size: 24px;
+    float:right;
+}
+
+#footerDiv>#website>.websiteList>.icon{
+    margin-top:13px;
+    margin-left: 40px;
+    margin-right: 10px;
+    width: 3%;
+    font-size: 24px;
+    float:right;
+}
+
+#footerDiv>#orders>.ordersList{
+    margin:auto;
+    padding-top:25px;
+}
+
+#previewDiv{
+    float: left;
+    margin-right:30px; 
+}
+
+.previewPicture{
+    width:100px;
+    height:100px;
+}
+
+.orderName{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.orderData{
+    color: #9B9B9B;
+    margin-bottom: 10px;
+}
+
+.fa-male{
+    margin-left:2px;
+}
+
+.orderTotal{
+    float: right;
+}
+.orderCost{
+    font-size: 20px;
+    font-weight: bolder;
+}
